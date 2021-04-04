@@ -1,0 +1,23 @@
+<div style="float: left; width: 40%">
+    
+</div>
+
+
+<div style="float: right; width: 60%">
+    <form action="/update_process" method="POST">
+            <input type="hidden" name="id" value="{{{ updateFileName }}}">
+            <p>
+            <input type="text" name="title" placeholder="제목" value="{{{ updateFileName }}}" style="float: none; width: 350px;">
+            </p>
+            <p>
+                <textarea name="description" placeholder="설명" style="float: none; width: 350px; height: 300px">{{{ updateFileDescription }}}</textarea>
+            </p>
+            <p>
+                <input type="submit" value="수정" style="background-color: rgb(13, 49, 49); color:white; font-weight:bolder">
+            </p>
+        </form>
+        
+
+        
+</div>
+        

@@ -2,13 +2,15 @@
         <!-- 왼쪽 -->
         <div style="float: left; width: 20%">
 
-            <form action="/create_process" method="POST">
-            <input type="submit" value="이미지 등록" style="background-color: rgb(41, 40, 40); color:white; font-weight:bolder">
-            </form>
+            <a href="/create">
+                <input type="button" value="이미지 등록" style="background-color: rgb(41, 40, 40); color:white; font-weight:bolder">
+            </a>
 
-            <form action="/delete_process" method="POST">
-            <input type="submit" value="이미지 삭제" style="background-color: rgb(41, 40, 40); color:white; font-weight:bolder">
-            </form>
+            <a href="/delete/{{{ filename }}}">
+                <input type="submit" value="이미지 삭제" style="background-color: rgb(116, 6, 6); color:white; font-weight:bolder">
+            </a>
+            
+        
             
             <h2 style="background-color: rgb(167, 149, 149); text-align: center;">::List::</h2>
                 {{{imgList}}}
@@ -17,11 +19,11 @@
         <!-- 오른쪽 -->
         <div style="float: right; width: 80%">
 
-            <form action="/update_process" method="POST">
+            <a href="/update/{{{ filename }}}">
                             
-              <input type="submit" value="이미지 수정"  style="float: right; background-color:rgb(98, 16, 190); color:white; font-weight:bolder">
+              <input type="button" value="이미지 수정"  style="float: right; background-color:rgb(98, 16, 190); color:white; font-weight:bolder">
 
-            </form>
+            </a>
 
 
             <h2 style="color: rgb(6, 84, 148); text-align:center;"> &#34; {{ filename }} &#34; </h2> 
