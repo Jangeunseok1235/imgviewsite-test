@@ -1,0 +1,13 @@
+<div style="float: left; width: 40%">
+</div>
+<div style="float: right; width: 60%">
+    <p style="font-size: 30px; color: rgb(45, 161, 9); font-weight:bolder">
+     TITLE :   "{{{ uploadFileName }}}"
+    </p>
+    <form action="/upload_process" enctype="multipart/form-data" method="post">
+        <input type="text" value="{{{ uploadFileName }}}" name="title">
+        <input type="file" value="이미지 파일 선택" name="userfile" style="background-color: rgb(104, 104, 110); color:white; font-weight:bolder">
+        <button type="submit" class="btn btn-primary">이미지추가</button>
+    </form>
+</div>    
+    

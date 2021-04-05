@@ -3,11 +3,11 @@
         <div style="float: left; width: 20%">
 
             <a href="/create">
-                <input type="button" value="이미지 등록" style="background-color: rgb(41, 40, 40); color:white; font-weight:bolder">
+                <input type="button" value="글 등록" style="background-color: rgb(41, 40, 40); color:white; font-weight:bolder">
             </a>
 
             <a href="/delete/{{{ filename }}}">
-                <input type="submit" value="이미지 삭제" style="background-color: rgb(116, 6, 6); color:white; font-weight:bolder">
+                <input type="submit" value="글 삭제" style="background-color: rgb(116, 6, 6); color:white; font-weight:bolder">
             </a>
             
         
@@ -18,10 +18,14 @@
 
         <!-- 오른쪽 -->
         <div style="float: right; width: 80%">
+            <a href="/upload/{{{ filename }}}">
+                            
+              <input type="button" value="이미지추가"  style="float: right; background-color:rgb(45, 161, 9); color:white; font-weight:bolder">
 
+            </a>
             <a href="/update/{{{ filename }}}">
                             
-              <input type="button" value="이미지 수정"  style="float: right; background-color:rgb(98, 16, 190); color:white; font-weight:bolder">
+              <input type="button" value="글 수정"  style="float: right; background-color:rgb(98, 16, 190); color:white; font-weight:bolder">
 
             </a>
 
@@ -33,7 +37,8 @@
             <p style="text-align: center; font-size: 20px;" >
                 {{ fileDescription }}
             </p>
-           <img src="{{{filename}}}.png" alt="None(이미지 없음)" style="inline-size: 100%; float:right;"> 
+           <img src="{{{filename}}}.png" alt="None(이미지 없음)" style="inline-size: 100%; float:right;">
+
            <!-- 핸드바는 원래 html을 생서하도록 설계되었기 때문에, 핸드바가 받아오는 값을 벗어나지 못하도록 하려면 "트리플 숨김 {}x3 " 을 사용해야 한다. 
            
            예를 들어 이미지를 불러오는 파일 처럼""안에 갇히면 2개짜리로는 인식을 못한다.
